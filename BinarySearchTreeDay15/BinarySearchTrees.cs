@@ -50,6 +50,11 @@ namespace BinarySearchTreeDay15
             }
         }
 
+        public void GetSize()
+        {
+            Console.WriteLine("Size " + " " + (1 + this.leftCount + this.rightCount));
+        }
+
         public void Display()
         {
             if (this.leftTree != null)

@@ -11,6 +11,23 @@ namespace BinarySearchTreeDay15
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the Binary Search Tree");
+            BinarySearchTrees<int> tree = new BinarySearchTrees<int>(56);
+
+            Console.WriteLine("Enter 1.to value insertion\n");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            switch (num)
+            {
+                case 1:
+                    tree.Insert(30);
+                    tree.Insert(70);
+                    tree.Display();
+                    break;
+
+                default:
+                    Console.WriteLine("Enter valid option!!!");
+                    break;
+            }
             Console.ReadKey();
         }
     }
